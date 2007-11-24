@@ -24,10 +24,11 @@ import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
+import org.apache.wicket.markup.html.panel.Panel;
+
 import wicket.contrib.webbeans.containers.BeanForm;
 import wicket.contrib.webbeans.containers.BeanGridPanel;
 import wicket.contrib.webbeans.model.BeanMetaData;
-import wicket.markup.html.panel.Panel;
 
 /**
  * Top or second-level annotation describing a bean and, optionally, its context. <p>

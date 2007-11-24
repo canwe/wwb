@@ -1,14 +1,15 @@
 package wicket.contrib.webbeans.examples.css;
 
-import wicket.ajax.AjaxRequestTarget;
+import org.apache.wicket.ajax.AjaxRequestTarget;
+import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.form.Form;
+
 import wicket.contrib.webbeans.containers.BeanForm;
 import wicket.contrib.webbeans.model.BeanMetaData;
 import wicket.contrib.webbeans.model.ElementMetaData;
 import wicket.contrib.webbeans.model.api.JBean;
 import wicket.contrib.webbeans.model.api.JBeans;
 import wicket.contrib.webbeans.model.api.JProperty;
-import wicket.markup.html.WebPage;
-import wicket.markup.html.form.Form;
 
 public class CssPage extends WebPage
 {

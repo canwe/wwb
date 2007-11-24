@@ -23,12 +23,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.wicket.markup.html.panel.Panel;
+
 import wicket.contrib.webbeans.annotations.Action;
 import wicket.contrib.webbeans.annotations.Bean;
 import wicket.contrib.webbeans.annotations.Parameter;
 import wicket.contrib.webbeans.annotations.Property;
 import wicket.contrib.webbeans.annotations.Tab;
-import wicket.markup.html.panel.Panel;
 
 /**
  * Bean API implementation. Provides information from the {@link Bean} annotation in a Java API form. <p>

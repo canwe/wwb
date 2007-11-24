@@ -38,10 +38,15 @@ import java.util.logging.Logger;
 
 import org.apache.commons.beanutils.MethodUtils;
 import org.apache.commons.beanutils.PropertyUtils;
+import org.apache.wicket.Component;
+import org.apache.wicket.ajax.AjaxRequestTarget;
+import org.apache.wicket.behavior.AttributeAppender;
+import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.markup.html.panel.Panel;
+import org.apache.wicket.model.IModel;
+import org.apache.wicket.model.Model;
+import org.apache.wicket.util.string.Strings;
 
-import wicket.Component;
-import wicket.ajax.AjaxRequestTarget;
-import wicket.behavior.AttributeAppender;
 import wicket.contrib.webbeans.actions.BeanSubmitButton;
 import wicket.contrib.webbeans.annotations.Action;
 import wicket.contrib.webbeans.annotations.Bean;
@@ -53,11 +58,6 @@ import wicket.contrib.webbeans.containers.BeanGridPanel;
 import wicket.contrib.webbeans.fields.EmptyField;
 import wicket.contrib.webbeans.fields.Field;
 import wicket.contrib.webbeans.model.api.JBeans;
-import wicket.markup.html.form.Form;
-import wicket.markup.html.panel.Panel;
-import wicket.model.IModel;
-import wicket.model.Model;
-import wicket.util.string.Strings;
 
 /**
  * Represents the metadata for a bean properties and actions. Metadata for beans is derived automatically by convention and optionally 
@@ -1277,7 +1277,7 @@ public class BeanMetaData extends MetaData implements Serializable
             return;
         }
 
-        Object bean = beanModel.getObject(null);
+        Object bean = beanModel.getObject();
         if (bean != null) {
             try {
                 getRemovePropertyChangeListenerMethod().invoke(bean, new Object[] { listener });

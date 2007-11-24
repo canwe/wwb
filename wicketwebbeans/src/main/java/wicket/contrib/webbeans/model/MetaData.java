@@ -23,9 +23,9 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import wicket.Component;
+import org.apache.wicket.Component;
 import wicket.contrib.webbeans.util.WicketUtil;
-import wicket.util.string.Strings;
+import org.apache.wicket.util.string.Strings;
 
 /**
  * Common metadata methods. <p>

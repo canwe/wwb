@@ -1,10 +1,11 @@
 package wicket.contrib.webbeans.examples.container;
 
+import org.apache.wicket.markup.html.WebPage;
+
 import wicket.contrib.webbeans.annotations.Bean;
 import wicket.contrib.webbeans.containers.BeanForm;
 import wicket.contrib.webbeans.containers.VerticalLayoutBeanPanel;
 import wicket.contrib.webbeans.model.BeanMetaData;
-import wicket.markup.html.WebPage;
 
 @Bean(type = TestBean.class, container = VerticalLayoutBeanPanel.class)
 public class CustomContainerPage extends WebPage

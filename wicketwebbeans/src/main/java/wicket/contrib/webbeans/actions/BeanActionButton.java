@@ -19,11 +19,11 @@ package wicket.contrib.webbeans.actions;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import wicket.Component;
-import wicket.ajax.AjaxRequestTarget;
+import org.apache.wicket.ajax.AjaxRequestTarget;
 import wicket.contrib.webbeans.model.ElementMetaData;
-import wicket.markup.html.form.Form;
-import wicket.model.IModel;
+import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.model.IModel;
+import org.apache.wicket.Component;
 
 /**
  * Bean button for Actions. Action config properties:<p>
@@ -64,7 +64,7 @@ public class BeanActionButton extends BeanSubmitButton
     protected void onAction(AjaxRequestTarget target, Form form, Object bean)
     {
         if (bean instanceof IModel) {
-            bean = ((IModel)bean).getObject(form);
+            bean = ((IModel)bean).getObject();
         }
         
         Component component = element.getBeanMetaData().getComponent();

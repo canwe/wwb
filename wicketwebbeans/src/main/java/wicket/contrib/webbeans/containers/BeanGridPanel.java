@@ -20,22 +20,23 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import wicket.AttributeModifier;
-import wicket.Component;
-import wicket.behavior.SimpleAttributeModifier;
+import org.apache.wicket.AttributeModifier;
+import org.apache.wicket.Component;
+import org.apache.wicket.behavior.SimpleAttributeModifier;
+import org.apache.wicket.markup.ComponentTag;
+import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.markup.html.list.ListItem;
+import org.apache.wicket.markup.html.list.ListView;
+import org.apache.wicket.markup.html.panel.Panel;
+import org.apache.wicket.model.IModel;
+import org.apache.wicket.model.Model;
+
 import wicket.contrib.webbeans.actions.BeanActionButton;
 import wicket.contrib.webbeans.fields.LabeledField;
 import wicket.contrib.webbeans.fields.UnlabeledField;
 import wicket.contrib.webbeans.model.BeanMetaData;
 import wicket.contrib.webbeans.model.ElementMetaData;
 import wicket.contrib.webbeans.model.TabMetaData;
-import wicket.markup.ComponentTag;
-import wicket.markup.html.form.Form;
-import wicket.markup.html.list.ListItem;
-import wicket.markup.html.list.ListView;
-import wicket.markup.html.panel.Panel;
-import wicket.model.IModel;
-import wicket.model.Model;
 
 /**
  * A panel for generically displaying Java Beans in a grid-style layout.
